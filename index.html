@@ -8,6 +8,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dictionnary</title>
+    <style>
+      .button-play:hover circle{
+        fill-opacity: 1;
+      }
+      .button-play:hover path{
+        fill: #FFFFFF;
+      }
+      .active-toggle path{
+        stroke: #A445ED;
+        /* fill: "#A445ED"; */
+      }
+
+      .custom-select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("./src/assets/images/icon-arrow-down.svg");
+        background-repeat: no-repeat;
+        background-position: right  center;
+        background-size: 8px;
+      }
+
+      .custom-select::-ms-expand {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
