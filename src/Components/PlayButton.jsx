@@ -13,12 +13,14 @@ export default function PlayButton({src}) {
 
   return (
     <>
+      {
+        src[currentSourceIndex] ? 
           <audio src={src[currentSourceIndex].audio} ref={audioRef}
             onError={() => {
           setCurrentSourceIndex(prevIndex => prevIndex + 1);
         }}
-          />
-           <svg onClick={play} xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" className="cursor-pointer button-play">
+          />: setCurrentSourceIndex(prevIndex => prevIndex + 1)}
+           <svg onClick={play} xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" className="cursor-pointer button-play w-[50px] h-[50px] mb-4">
             <g fill="#A445ED" fill-rule="evenodd">
                 <circle
                 cx="37.5"

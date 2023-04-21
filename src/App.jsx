@@ -18,16 +18,18 @@ function App() {
 
 
   return (
-    <div className="dark:bg-black-1 dark:text-white-4 h-screen p-4 overflow-hidden">
-
-      <header className="flex justify-between items-center mb-8">
-        <img src={LogoIcon} alt="logo icon" />
-        <div className="flex">
-          <FontToggle />
-          <ToggleButton />
-        </div>
-      </header>
-      <SearchInput />
+    <div className=" dark:bg-black-1 text-lg dark:text-white-4 min-h-screen p-4 overflow-hidden">
+      <div className="md:w-[756px] mx-auto">
+        <header className="flex justify-between items-center mb-8">
+          <img src={LogoIcon} alt="logo icon" />
+          <div className="flex">
+            <FontToggle />
+            <div className='w-[1px] bg-white-2'></div>
+            <ToggleButton />
+          </div>
+        </header>
+        <SearchInput />
+      </div>
     </div>
   )
 }
