@@ -11,10 +11,10 @@ export default function FontToggle() {
   return (
     <>
        <form id="font">
-        <select className=" custom-select text-black dark:text-white-4 border-none outline-none font-bold bg-transparent pr-4" onChange={handleFontChange}>
-          <option className='text-white-4 bg-violet focus:bg-violet' value="Lora, serif">Serif</option>
-          <option className='text-white-4 bg-violet focus:bg-violet' value="Inter, sans-serif">Sans Serif</option>
-          <option className='text-white-4 bg-violet focus:bg-violet' value="Inconsolata, monospace">Mono</option>
+        <select className=" custom-select text-black dark:text-white-4 border-none outline-none font-bold bg-transparent pr-6 mr-4" onChange={handleFontChange}>
+          <option className='text-white-4 bg-violet' value="Lora, serif">Serif</option>
+          <option className='text-white-4 bg-violet' value="Inter, sans-serif">Sans Serif</option>
+          <option className='text-white-4 bg-violet' value="Inconsolata, monospace">Mono</option>
         </select>
       </form>
 
