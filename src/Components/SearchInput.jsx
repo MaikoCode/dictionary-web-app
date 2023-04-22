@@ -90,7 +90,7 @@ export default function SearchInput() {
 
           <div className='flex justify-between items-center mt-6'>
             <p className='flex flex-col justify-between mb-2'>
-              <span className='font-bold text-6xl pb-2'>{data[0].word}</span>
+              <span className='font-bold text-6xl pb-2 max-w-3xl break-words'>{data[0].word}</span>
               <span className='text-violet text-xl pb-2'>{data[0].phonetic}</span>
             </p>
           
@@ -111,7 +111,7 @@ export default function SearchInput() {
             <ul className='pb-4'>
               {
                 data[0].meanings[0].definitions.slice(0,3).map(item => {
-                return <li className='flex pt-2 before:content-["\2022"] before:text-violet before:font-bold before:block before:w-4 before:mr-2'>{item.definition}</li>
+                return <li className='flex pt-2 before:content-["\2022"] before:text-violet before:font-bold before:block before:w-4'>{item.definition}</li>
                 })
               }
             </ul>
